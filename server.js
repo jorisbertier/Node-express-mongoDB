@@ -3,7 +3,8 @@ const app = require('./app');
 
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://jorisbertier:wczB0AG9VaNbnqDV@cluster0.kz6mg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+//PASSWORD est à remplacé par le mot de passe de la base de donnée présent en console mongoDB Atlas
+mongoose.connect('mongodb+srv://jorisbertier:PASSWORD@cluster0.kz6mg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
   { useNewUrlParser: true,
     useUnifiedTopology: true })
   .then(() => console.log('Connexion à MongoDB réussie !'))
